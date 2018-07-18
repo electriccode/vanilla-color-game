@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    width: 100%;
+    color: #424242;
+    font-family: sans-serif;
+}
+
+.screen .hide {
+    display: none;
+}
+
+.screen.highlight-won .panel-game .panel-title {
+    background-color: #B8E986;
+}
+
+.screen.highlight-lost .panel-game .panel-title {
+    background-color: #FFA5B0;
+}
+
+.card {
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.button, button {
+    font-size: 1.6em;
+    text-transform: uppercase;
+    border-width: 0;
+    box-sizing: border-box;
+    height: 40px;
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+button.highlight {
+    background-color:#FFF89D;
+}
+
+input {
+    box-sizing: border-box;
+    font-size: 1.6em;
+}
+
+input[type=text] {
+    border-width: 0;
+    border-bottom-width: 1px;
+    height: 40px;
+}
+
+.button-primary {
+    background-color: rgb(17, 107, 201);
+    color: white;
+    box-shadow: 0 2px 2px 1px rgba(17, 107, 201, 0.3);
+    
+}
+
+.screen {
+    width: 990px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 1em;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+.panel {
+    border: solid 1px #424242;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.panel-title {
+    background-color: #eee;
+    display: flex;
+    padding: 0.5em;
+    font-size: 1.6em;
+    justify-content: space-between;
+}
+
+.panel-body {
+    height: 100%;
+}
+
+.progress {
+    height: 20px;
+    background-color: #F5F5F5;
+    position: relative;
+}
+
+.progress .done {
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgb(17, 107, 201);
+}
+
+.panel-game, .panel-new-player {
+    width: calc(100% - 300px - 1em);
+}
+
+.panel-game {
+    
+}
+
+.panel-leaderboard {
+    width: 300px;
+}
+
+.panel-new-player form {
+    height: 100%;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.panel-new-player form input[name=name], .panel-new-player form input[type=submit] {
+    width: 100%;
+}
+
+.panel-new-player form input[name=name] {
+    margin-bottom: 2em;
+}
+
+.panel-leaderboard .players {
+    padding: 1em;
+    font-size: 12px;
+    height: 100%;
+}
+
+.panel-leaderboard .player {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em 0;
+}
+
+.panel-leaderboard .player:first-child .score {
+    font-weight: bold;
+}
+
+.game-question {
+    height: calc(100% - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game-question .card {
+    font-size: 3.5em;
+    width: 5em;
+    padding: 0.5em 0;
+    text-align: center;
+    text-transform: lowercase;
+    font-weight: bold;
+}
+
+.game-question .color-name {
+    margin-bottom: 0.6em;
+}
+
+.game-options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.game-options button {
+    width: 45%;
+}
